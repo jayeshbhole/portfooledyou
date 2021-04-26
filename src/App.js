@@ -16,11 +16,10 @@ import SideLinks from "./components/SideLinks";
 
 function App() {
 	return (
-		<div ref={vanta} className="vanta">
+		<>
 			<div className="main">
 				<BrowserRouter>
 					<Navbar />
-					<SideLinks />
 
 					<div className="sections">
 						<Landing />
@@ -28,9 +27,10 @@ function App() {
 						{/* <Projects /> */}
 						{/* <Contact /> */}
 					</div>
+					<SideLinks />
 				</BrowserRouter>
 			</div>
-		</div>
+		</>
 	);
 }
 
