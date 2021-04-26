@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+.nav {
+	position: sticky;
+	position: -webkit-sticky;
+	padding: 0.6rem;
+	top: 0;
+	font-size: 1.2rem;
+	color: $accent;
+	z-index: 99;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	// Glass Morphism
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(15px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+
+	//
+	span,
+	a:visited,
+	a {
+		padding: 0.3rem 0.6rem;
+		color: $text;
+	}
+	a:visited,
+	a {
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+	a:first-child {
+		padding: 0.4rem 1.2rem;
+		border: 2px $accent solid;
+		margin-right: 1rem;
+		border-radius: 0.3rem;
+		&:hover {
+			color: $accent-sec;
+			background-color: rgba(0, 255, 162, 0.233);
+		}
+	}
+}
