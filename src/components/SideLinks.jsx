@@ -7,18 +7,18 @@ const SideLinks = () => {
 	return (
 		<div id="sidelinks">
 			<div className="container">
-				<Link id="github">
+				<Link id="github" to="http://github.com/jayeshbhole/">
 					<span>GitHub</span>
 					<FaGithub />
 				</Link>
-				<Link id="linkedin">
+				<Link id="linkedin" to="https://www.linkedin.com/in/jayesh-bhole-701086193/">
 					<span>LinkedIn</span>
 					<FaLinkedin />
 				</Link>
-				<Link id="mail">
+				<a id="mail" href="mailto:jayeshbhole123@gmail.com">
 					<span>Email</span>
 					<FiAtSign />
-				</Link>
+				</a>
 			</div>
 		</div>
 	);
