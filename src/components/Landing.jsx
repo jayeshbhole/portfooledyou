@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FiChevronDown } from "react-icons/fi";
 import "../scss/landing.scss";
 
 const Landing = () => {
 	return (
-		<div id="landing" className="section">
-			<span>👋 Hey there!</span>
+		<section id="Landing">
+			<span>Hey there!</span>
 			<h1>
-				<span style={{ color: "#eaeaea" }}>I am</span> Jayesh Bhole
+				<span>I am</span> Jayesh Bhole
 			</h1>
 			<h2>
 				I am fond of creating stuff for the web!{" "}
@@ -20,14 +19,20 @@ const Landing = () => {
 				Undergraduate @ IIIT Pune
 			</span>
 			<br />
-			<HashLink to="/#Contact" id="contact">
-				Contact!
-			</HashLink>
+			<span id="cta">
+				<HashLink to="/#Contact" className="link-button">
+					Contact!
+				</HashLink>
+				<HashLink to="/#" className="link-button">
+					Resume
+				</HashLink>
+			</span>
+
 			<HashLink smooth id="chevron" to="/#About">
 				<FiChevronDown />
 				<FiChevronDown />
 			</HashLink>
-		</div>
+		</section>
 	);
 };
 

@@ -1,7 +1,7 @@
 import "../scss/about.scss";
 const About = () => {
 	return (
-		<div id="About" className="section">
+		<section id="About">
 			<h2>About Me</h2>
 			<p>
 				Hello!
@@ -11,7 +11,27 @@ const About = () => {
 				<br />
 				On the edge of my seat to learn and create new stuff.
 			</p>
-		</div>
+			<div id="skills">
+				<div>
+					<h3>Recent Tech Used</h3>
+					<p>
+						{">"} React Js <br />
+						{">"} Node.Js <br />
+						{">"} MongoDB <br />
+						{">"} Firebase <br />
+					</p>
+				</div>
+				<div>
+					<h3>Languages</h3>
+					<p>
+						{">"} Javascript <br />
+						{">"} Python <br />
+						{">"} TypeScript <br />
+						{">"} C++ <br />
+					</p>
+				</div>
+			</div>
+		</section>
 	);
 };
 

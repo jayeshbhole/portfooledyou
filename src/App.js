@@ -1,17 +1,16 @@
 // Dependancies
-import Halo from "vanta/dist/vanta.halo.min.js";
 
 // Styles
 import "./scss/main.scss";
 import "./scss/landing.scss";
 
-// Components
-import { useState, useRef, useEffect } from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+// Components;
+import { BrowserRouter } from "react-router-dom";
 
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Projects from "./components/Projects";
 import SideLinks from "./components/SideLinks";
 
 function App() {
@@ -24,8 +23,7 @@ function App() {
 					<div className="sections">
 						<Landing />
 						<About />
-						{/* <Projects /> */}
-						{/* <Contact /> */}
+						<Projects />
 					</div>
 					<SideLinks />
 				</BrowserRouter>

@@ -1,26 +1,30 @@
 @import "variables.scss";
 
-.section#landing {
-	padding-top: 10rem;
-	min-height: calc(100vh - 18rem);
+#Landing {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	h1,
 	h2 {
 		font-family: "Source Sans Pro", sans-serif;
 	}
 	h1 {
-		font-size: 3rem;
-		color: $accent;
 		margin: 1rem 0;
+		span {
+			color: $text-light;
+		}
 	}
 	h2 {
-		font-weight: 600;
-		margin-bottom: 2rem;
+		color: $text;
 	}
-	#contact {
+	#cta {
+		justify-self: flex-end;
+	}
+	.link-button {
+		color: $accent;
 		display: inline-block;
-		padding: 0.4rem 1.2rem;
-		margin-top: 6rem;
+		padding: 0.6rem 1.4rem;
+		margin-right: 1rem;
 		border: 2px $accent solid;
 		border-radius: 0.3rem;
 		transition: all 0.2s ease-in-out;
@@ -48,7 +52,7 @@
 		}
 		svg:last-child {
 			font-size: 3rem;
-			animation-delay: -0.5s;
+			animation-delay: -0.3s;
 			margin-top: -1.8rem;
 		}
 		@keyframes chevron {
@@ -56,11 +60,29 @@
 				transform: translate3d(0, 0, 0);
 			}
 			50% {
-				transform: translate3d(0, 0.3rem, 0);
+				transform: translate3d(0, 0.6rem, 0);
 			}
 			100% {
 				transform: translate3d(0, 0, 0);
 			}
 		}
 	}
+}
+
+// prettier-ignore
+css-doodle {
+	--rule: (
+		: doodle {
+			@grid: 5; 
+			grid-gap: 5px; 
+			width: 10em; 
+			height: 10em;
+		} 
+			background: @pick(#21e0b4af, #00ffa3, #28e6b9, #26dddd) ;
+			border-radius: @repeat(4, @rand(40%, 60%));
+		:after {
+			color: black;
+			content: \@hex(@rand(9632, 9687));
+		}
+	);
 }
