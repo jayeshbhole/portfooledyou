@@ -1,18 +1,18 @@
 @import "./variables.scss";
 .Project {
-	width: 80%;
+	max-width: 85%;
 	margin: auto;
 	display: grid;
-	grid-template-columns: 5fr 6fr;
+	grid-template-columns: 4fr 5fr;
 	margin-bottom: 5rem;
+	margin-top: 10rem;
 
 	.project-preview {
 		border-radius: 1rem;
+		text-align: right;
 		.image {
 			position: relative;
 			display: inline-flex;
-			max-width: 100%;
-			max-height: 100%;
 			border-radius: 1rem;
 			box-shadow: 0.2rem 0.2rem 0 1px $accent-sec;
 			transition: all 0.3s ease-in-out;
@@ -36,7 +36,6 @@
 				transition: all 0.3s ease-in-out;
 				border-radius: 1rem;
 				max-width: 100%;
-				// max-height: 100%;
 			}
 		}
 	}
@@ -57,6 +56,8 @@
 
 	.project-info {
 		margin: auto;
+		margin-left: 0;
+		margin-right: 0;
 		height: 10rem;
 		border-radius: 0.75rem;
 
@@ -72,7 +73,7 @@
 		justify-content: space-evenly;
 		.title {
 			text-align: center;
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 			span {
 				color: $accent;
 			}
@@ -81,18 +82,35 @@
 		.description {
 			position: relative;
 			padding-right: 0.5rem;
-			font-size: 1rem;
+			font-size: 1.1rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			.project-links {
-				font-size: 0.9rem;
+			.project-meta {
+				font-size: 1rem;
 				margin-top: 1rem;
 				display: flex;
 				justify-content: space-between;
 				span {
-					color: $accent;
 					margin-right: 1rem;
+					color: $accent;
+					&.--link {
+						color: $text;
+						margin: 0;
+						i {
+							position: relative;
+
+							margin-right: 3ch;
+							svg {
+								position: absolute;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+						}
+						&:hover {
+							color: $accent;
+						}
+					}
 				}
 			}
 		}
@@ -102,6 +120,7 @@
 		grid-template-columns: 6fr 5fr;
 		.project-preview {
 			order: 2;
+			text-align: left;
 		}
 		.project-info {
 			order: 1;

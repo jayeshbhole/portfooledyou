@@ -1,5 +1,8 @@
 import "../scss/Projects.scss";
 import projects from "../projects";
+import { BiCodeCurly } from "react-icons/bi";
+import { FiExternalLink } from "react-icons/fi";
+
 export default function Projects() {
 	return (
 		<section id="Projects">
@@ -25,10 +28,24 @@ const Project = ({ title, id, description, demoLink, codeLink, techStack, previe
 				</div>
 				<div className="description">
 					<div>{description}</div>
-					<div className="project-links">
+					<div className="project-meta">
 						<div>
-							<span>Live</span>
-							<span>Code</span>
+							<a href={demoLink}>
+								<span className="--link">
+									Live&nbsp;
+									<i>
+										<FiExternalLink />
+									</i>
+								</span>
+							</a>
+							<a href={codeLink}>
+								<span className="--link">
+									Code&nbsp;
+									<i>
+										<BiCodeCurly />
+									</i>
+								</span>
+							</a>
 						</div>
 						<div>
 							{techStack.map((tech, index) => (
