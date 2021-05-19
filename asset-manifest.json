@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/portfooledyou/static/css/main.8f36ed3e.chunk.css",
-    "main.js": "/portfooledyou/static/js/main.261c8726.chunk.js",
-    "main.js.map": "/portfooledyou/static/js/main.261c8726.chunk.js.map",
-    "runtime-main.js": "/portfooledyou/static/js/runtime-main.835dbd39.js",
-    "runtime-main.js.map": "/portfooledyou/static/js/runtime-main.835dbd39.js.map",
-    "static/js/2.860c604a.chunk.js": "/portfooledyou/static/js/2.860c604a.chunk.js",
-    "static/js/2.860c604a.chunk.js.map": "/portfooledyou/static/js/2.860c604a.chunk.js.map",
-    "static/js/3.846a4204.chunk.js": "/portfooledyou/static/js/3.846a4204.chunk.js",
-    "static/js/3.846a4204.chunk.js.map": "/portfooledyou/static/js/3.846a4204.chunk.js.map",
+    "main.css": "/portfooledyou/static/css/main.d19228fe.chunk.css",
+    "main.js": "/portfooledyou/static/js/main.615ffd27.chunk.js",
+    "main.js.map": "/portfooledyou/static/js/main.615ffd27.chunk.js.map",
+    "runtime-main.js": "/portfooledyou/static/js/runtime-main.8cfb2ecc.js",
+    "runtime-main.js.map": "/portfooledyou/static/js/runtime-main.8cfb2ecc.js.map",
+    "static/js/2.bf6b7e4b.chunk.js": "/portfooledyou/static/js/2.bf6b7e4b.chunk.js",
+    "static/js/2.bf6b7e4b.chunk.js.map": "/portfooledyou/static/js/2.bf6b7e4b.chunk.js.map",
+    "static/js/3.26d508b2.chunk.js": "/portfooledyou/static/js/3.26d508b2.chunk.js",
+    "static/js/3.26d508b2.chunk.js.map": "/portfooledyou/static/js/3.26d508b2.chunk.js.map",
     "index.html": "/portfooledyou/index.html",
-    "static/css/main.8f36ed3e.chunk.css.map": "/portfooledyou/static/css/main.8f36ed3e.chunk.css.map",
-    "static/js/2.860c604a.chunk.js.LICENSE.txt": "/portfooledyou/static/js/2.860c604a.chunk.js.LICENSE.txt"
+    "static/css/main.d19228fe.chunk.css.map": "/portfooledyou/static/css/main.d19228fe.chunk.css.map",
+    "static/js/2.bf6b7e4b.chunk.js.LICENSE.txt": "/portfooledyou/static/js/2.bf6b7e4b.chunk.js.LICENSE.txt",
+    "static/media/eclecticJourney.png": "/portfooledyou/static/media/eclecticJourney.f055cac5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.835dbd39.js",
-    "static/js/2.860c604a.chunk.js",
-    "static/css/main.8f36ed3e.chunk.css",
-    "static/js/main.261c8726.chunk.js"
+    "static/js/runtime-main.8cfb2ecc.js",
+    "static/js/2.bf6b7e4b.chunk.js",
+    "static/css/main.d19228fe.chunk.css",
+    "static/js/main.615ffd27.chunk.js"
   ]
 }
