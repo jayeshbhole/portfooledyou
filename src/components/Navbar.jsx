@@ -4,8 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ refs }) => {
 	return (
-		<div className="nav">
-			<Link>Resume</Link>
+		<nav>
 			<span>[</span>
 
 			<HashLink smooth={true} to="/#">
@@ -22,7 +21,7 @@ const Navbar = ({ refs }) => {
 			</HashLink>
 
 			<span>]</span>
-		</div>
+		</nav>
 	);
 };
 
