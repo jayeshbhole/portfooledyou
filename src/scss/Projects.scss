@@ -1,0 +1,117 @@
+@import "./variables.scss";
+.Project {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 5fr 6fr;
+	margin-bottom: 5rem;
+
+	.project-preview {
+		border-radius: 1rem;
+		.image {
+			position: relative;
+			display: inline-flex;
+			max-width: 100%;
+			max-height: 100%;
+			border-radius: 1rem;
+			box-shadow: 0.2rem 0.2rem 0 1px $accent-sec;
+			transition: all 0.3s ease-in-out;
+
+			&::after {
+				transform: translate(-0.5rem, -0.5rem);
+				border-radius: 1rem;
+				content: "";
+				height: 100%;
+				width: 100%;
+				background: black;
+				opacity: 0.3;
+				transition: all 0.3s ease-in-out;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			img {
+				transform: translate(-0.5rem, -0.5rem);
+				transition: all 0.3s ease-in-out;
+				border-radius: 1rem;
+				max-width: 100%;
+				// max-height: 100%;
+			}
+		}
+	}
+
+	&:hover {
+		.project-preview .image {
+			box-shadow: 0.1rem 0.1rem 0 1px $accent;
+
+			img {
+				transform: translate(0, 0);
+			}
+		}
+		.project-preview .image::after {
+			opacity: 0;
+			transform: translate(0, 0);
+		}
+	}
+
+	.project-info {
+		margin: auto;
+		height: 10rem;
+		border-radius: 0.75rem;
+
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+
+		padding: 0.75rem 1rem;
+		padding-left: 2rem;
+
+		display: flex;
+		flex-direction: column;
+		background: #223886;
+		justify-content: space-evenly;
+		.title {
+			text-align: center;
+			font-size: 1.3rem;
+			span {
+				color: $accent;
+			}
+			margin-bottom: 1.25rem;
+		}
+		.description {
+			position: relative;
+			padding-right: 0.5rem;
+			font-size: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.project-links {
+				font-size: 0.9rem;
+				margin-top: 1rem;
+				display: flex;
+				justify-content: space-between;
+				span {
+					color: $accent;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+
+	&:nth-child(odd) {
+		grid-template-columns: 6fr 5fr;
+		.project-preview {
+			order: 2;
+		}
+		.project-info {
+			order: 1;
+
+			padding: 0.75rem 1rem;
+			padding-left: 2rem;
+
+			border-radius: 0.75rem;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}
