@@ -17,19 +17,19 @@ const About = () => {
 				<div>
 					<h3>Recent Tech Used</h3>
 					<p>
-						{">"} React Js <br />
-						{">"} Node.Js <br />
-						{">"} MongoDB <br />
-						{">"} Firebase <br />
+						{">"}&nbsp;React Js <br />
+						{">"}&nbsp;Node.Js <br />
+						{">"}&nbsp;MongoDB <br />
+						{">"}&nbsp;Firebase <br />
 					</p>
 				</div>
 				<div>
 					<h3>Languages</h3>
 					<p>
-						{">"} Javascript <br />
-						{">"} Python <br />
-						{">"} TypeScript <br />
-						{">"} C++ <br />
+						{">"}&nbsp;Javascript <br />
+						{">"}&nbsp;Python <br />
+						{">"}&nbsp;TypeScript <br />
+						{">"}&nbsp;C++ <br />
 					</p>
 				</div>
 			</div>
