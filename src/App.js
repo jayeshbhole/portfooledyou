@@ -1,12 +1,9 @@
 // Dependancies
-
+import { BrowserRouter } from "react-router-dom";
 // Styles
 import "./scss/main.scss";
 import "./scss/landing.scss";
-
 // Components;
-import { BrowserRouter } from "react-router-dom";
-
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import About from "./components/About";

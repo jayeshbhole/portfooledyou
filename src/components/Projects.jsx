@@ -1,15 +1,21 @@
-import "../scss/Projects.scss";
-import projects from "../projects";
 import { BiCodeCurly } from "react-icons/bi";
 import { FiExternalLink } from "react-icons/fi";
+import ScrollFade from "./ScrollFade";
+
+import "../scss/Projects.scss";
+import projects from "../projects";
 
 export default function Projects() {
 	return (
 		<section id="Projects">
 			<h2>Projects</h2>
-			{projects.map((proj, index) => (
-				<Project {...proj} id={index + 1} key={index} />
-			))}
+			{projects.map((proj, index) => {
+				return (
+					<ScrollFade>
+						<Project {...proj} id={index + 1} key={index} />
+					</ScrollFade>
+				);
+			})}
 		</section>
 	);
 }

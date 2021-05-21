@@ -1,5 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 import { FiChevronDown } from "react-icons/fi";
+
 import "../scss/landing.scss";
 
 const Landing = () => {

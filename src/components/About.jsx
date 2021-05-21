@@ -1,16 +1,18 @@
 import "../scss/about.scss";
+
 const About = () => {
 	return (
 		<section id="About">
 			<h2>About Me</h2>
-			<p>
+			<div>
 				Hello!
-				<br />
-				I am Jayesh Bhole, an undergraduate at IIIT Pune, full-stack web developer, robotics
-				enthusiast, a keen reader and a fan of personal growth.
+				<p>
+					I am Jayesh Bhole, an undergraduate at IIIT Pune, full-stack web developer,
+					robotics enthusiast, a keen reader and a fan of personal growth.
+				</p>
 				<br />
 				On the edge of my seat to learn and create new stuff.
-			</p>
+			</div>
 			<div id="skills">
 				<div>
 					<h3>Recent Tech Used</h3>

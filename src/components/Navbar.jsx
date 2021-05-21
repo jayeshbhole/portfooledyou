@@ -1,23 +1,22 @@
 import "../scss/navbar.scss";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const Navbar = ({ refs }) => {
+const Navbar = () => {
 	return (
 		<nav>
 			<span>[</span>
 
 			<HashLink smooth={true} to="/#">
-				Home,
+				"Home",
 			</HashLink>
 			<HashLink smooth={true} to="/#About">
-				About,
+				"About",
 			</HashLink>
 			<HashLink smooth to="/#Projects">
-				Projects,
+				"Projects",
 			</HashLink>
 			<HashLink smooth to="/#Contact">
-				Contact
+				"Contact"
 			</HashLink>
 
 			<span>]</span>
