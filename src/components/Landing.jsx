@@ -18,7 +18,6 @@ const Landing = () => {
 				<br />
 				Undergraduate @ IIIT Pune
 			</span>
-			<br />
 			<span id="cta">
 				<HashLink to="/#Contact" className="link-button">
 					Contact!

@@ -16,8 +16,11 @@
 	}
 	h2 {
 		color: $text;
+		text-align: left;
+		font-size: 2rem;
 	}
 	#cta {
+		margin-top: 3rem;
 		justify-self: flex-end;
 	}
 	.link-button {
@@ -67,22 +70,4 @@
 			}
 		}
 	}
-}
-
-// prettier-ignore
-css-doodle {
-	--rule: (
-		: doodle {
-			@grid: 5; 
-			grid-gap: 5px; 
-			width: 10em; 
-			height: 10em;
-		} 
-			background: @pick(#21e0b4af, #00ffa3, #28e6b9, #26dddd) ;
-			border-radius: @repeat(4, @rand(40%, 60%));
-		:after {
-			color: black;
-			content: \@hex(@rand(9632, 9687));
-		}
-	);
 }
