@@ -6,15 +6,18 @@ const SideLinks = () => {
 	return (
 		<div id="sidelinks">
 			<div className="container">
-				<a id="github" href="http://github.com/jayeshbhole/">
+				<a target="blank" id="github" href="http://github.com/jayeshbhole/">
 					<span>GitHub</span>
 					<FaGithub />
 				</a>
-				<a id="linkedin" href="https://www.linkedin.com/in/jayesh-bhole-701086193/">
+				<a
+					target="blank"
+					id="linkedin"
+					href="https://www.linkedin.com/in/jayesh-bhole-701086193/">
 					<span>LinkedIn</span>
 					<FaLinkedin />
 				</a>
-				<a id="mail" href="mailto:jayeshbhole123@gmail.com">
+				<a itarget="blank" d="mail" href="mailto:jayeshbhole123@gmail.com">
 					<span>Email</span>
 					<FiAtSign />
 				</a>
