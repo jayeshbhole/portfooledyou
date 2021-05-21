@@ -30,7 +30,7 @@ const Project = ({ title, id, description, demoLink, codeLink, techStack, previe
 					<div>{description}</div>
 					<div className="project-meta">
 						<div>
-							<a href={demoLink}>
+							<a target="blank" href={demoLink}>
 								<span className="--link">
 									Live&nbsp;
 									<i>
@@ -38,7 +38,8 @@ const Project = ({ title, id, description, demoLink, codeLink, techStack, previe
 									</i>
 								</span>
 							</a>
-							<a href={codeLink}>
+							&nbsp;
+							<a target="blank" href={codeLink}>
 								<span className="--link">
 									Code&nbsp;
 									<i>
