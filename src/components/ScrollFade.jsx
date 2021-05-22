@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useAnimation, motion, transform } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function FadeInWhenVisible({ children }) {
