@@ -17,31 +17,37 @@ function App() {
 		<>
 			<div className="main">
 				<Canvas style={{ position: "fixed", top: "0", left: "0", zIndex: "-1" }}>
-					<ambientLight intensity={0.9} />
+					<ambientLight intensity={0.8} />
 					<spotLight position={[10, 10, 10]} angle={1} />
-					<pointLight position={[10, 10, -10]} />
+					<pointLight position={[10, -5, -15]} intensity={0.8} color={"orange"} />
 					<ThreeBack />
 				</Canvas>
-				<BrowserRouter>
-					<Navbar />
-
-					<div className="sections">
-						<Landing />
-						<About />
-						<Projects />
-					</div>
-					<SideLinks />
-				</BrowserRouter>
+				<Router />
 			</div>
 		</>
 	);
 }
+const Router = () => {
+	return (
+		<BrowserRouter>
+			<Navbar />
 
+			<div className="sections">
+				<Landing />
+				<About />
+				<Projects />
+			</div>
+			<SideLinks />
+		</BrowserRouter>
+	);
+};
 function ThreeBack(props) {
 	const mesh = useRef();
+
 	useFrame(() => {
-		mesh.current.rotation.x = mesh.current.rotation.y += 0.0001;
+		mesh.current.rotation.x = mesh.current.rotation.y += 0.0003;
 	});
+
 	return (
 		<mesh {...props} ref={mesh} scale={1}>
 			<sphereGeometry args={[6, 15]} />
