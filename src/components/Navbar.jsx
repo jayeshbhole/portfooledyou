@@ -5,10 +5,19 @@ import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
 const Navbar = () => {
 	const [show, setShow] = useState(false);
-
+	const [flex, setFlex] = useState(false);
+	const handleOpen = () => {
+		setFlex(!flex);
+		setTimeout(() => setShow(!show), 10);
+	};
+	const handleClose = () => {
+		setShow(!show);
+		setTimeout(() => setFlex(!flex), 500);
+	};
 	return (
 		<nav className={`${show}`}>
-			<div className={`nav ${show}`} onClick={() => setShow(false)}>
+			<div className={`nav flex-${flex} ${show}`} onClick={handleClose}>
+				<h3>Jump To</h3>
 				<span>[</span>
 
 				<HashLink smooth={true} to="/#">
@@ -26,9 +35,9 @@ const Navbar = () => {
 
 				<span>]</span>
 			</div>
-			<span id="menu" onClick={() => setShow(!show)}>
-				<HiMenuAlt1 className={`${!show}`} />
-				<IoCloseOutline className={`${show}`} />
+			<span id="menu">
+				<HiMenuAlt1 className={`${!show}`} onClick={handleOpen} />
+				<IoCloseOutline className={`${show}`} onClick={handleClose} />
 			</span>
 		</nav>
 	);
