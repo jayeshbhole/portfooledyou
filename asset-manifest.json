@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfooledyou/static/css/main.ac4f6bd4.chunk.css",
-    "main.js": "/portfooledyou/static/js/main.e8defa40.chunk.js",
-    "main.js.map": "/portfooledyou/static/js/main.e8defa40.chunk.js.map",
+    "main.css": "/portfooledyou/static/css/main.c02f3733.chunk.css",
+    "main.js": "/portfooledyou/static/js/main.029178f7.chunk.js",
+    "main.js.map": "/portfooledyou/static/js/main.029178f7.chunk.js.map",
     "runtime-main.js": "/portfooledyou/static/js/runtime-main.734af7de.js",
     "runtime-main.js.map": "/portfooledyou/static/js/runtime-main.734af7de.js.map",
     "static/js/2.73011590.chunk.js": "/portfooledyou/static/js/2.73011590.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.91c440c8.chunk.js": "/portfooledyou/static/js/3.91c440c8.chunk.js",
     "static/js/3.91c440c8.chunk.js.map": "/portfooledyou/static/js/3.91c440c8.chunk.js.map",
     "index.html": "/portfooledyou/index.html",
-    "static/css/main.ac4f6bd4.chunk.css.map": "/portfooledyou/static/css/main.ac4f6bd4.chunk.css.map",
+    "static/css/main.c02f3733.chunk.css.map": "/portfooledyou/static/css/main.c02f3733.chunk.css.map",
     "static/js/2.73011590.chunk.js.LICENSE.txt": "/portfooledyou/static/js/2.73011590.chunk.js.LICENSE.txt",
     "static/media/Certify.png": "/portfooledyou/static/media/Certify.234bd600.png",
     "static/media/eclecticJourney.png": "/portfooledyou/static/media/eclecticJourney.f055cac5.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.734af7de.js",
     "static/js/2.73011590.chunk.js",
-    "static/css/main.ac4f6bd4.chunk.css",
-    "static/js/main.e8defa40.chunk.js"
+    "static/css/main.c02f3733.chunk.css",
+    "static/js/main.029178f7.chunk.js"
   ]
 }
