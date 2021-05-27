@@ -11,7 +11,7 @@ export default function Projects() {
 			<h2>Projects</h2>
 			{projects.map((proj, index) => {
 				return (
-					<ScrollFade key={index}>
+					<ScrollFade delay={index * 0.2} key={index}>
 						<Project {...proj} id={index + 1} />
 					</ScrollFade>
 				);
