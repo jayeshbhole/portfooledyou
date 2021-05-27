@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+#Contact {
+	h3 {
+		text-align: center;
+		color: $text;
+	}
+	.form {
+		form {
+			margin: auto;
+			max-width: 50ch;
+			display: flex;
+			flex-direction: column;
+			label {
+				margin: 1rem 0;
+				.error {
+					font-size: 1rem;
+					color: $danger;
+				}
+			}
+			input,
+			textarea {
+				width: 90%;
+				border-radius: 0.5rem;
+				background: none;
+				padding: 1rem 1.4rem;
+				margin: 0.25rem 0;
+				border: 2px $text solid;
+				background-color: rgba(14, 31, 68, 0.6);
+				color: $text;
+				font-size: 1.1rem;
+
+				&:hover {
+					background-color: rgba(14, 31, 68, 0.8);
+				}
+				&:focus-within {
+					border: 2px $accent solid;
+					outline: none;
+				}
+				&[aria-invalid="true"] {
+					border-color: $danger;
+				}
+				&[type="submit"] {
+					align-self: center;
+					background: none;
+					cursor: pointer;
+					width: min-content;
+					color: $accent;
+					border: 2px $accent solid;
+					transition: border 0.2s ease-in-out;
+
+					&:hover {
+						color: $accent-sec;
+						background-color: rgba(0, 255, 162, 0.233);
+					}
+				}
+			}
+			textarea {
+				min-height: 10rem;
+				width: 90% !important;
+			}
+		}
+	}
+}

@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import SideLinks from "./components/SideLinks";
+import Contact from "./components/Contact";
 
 function App() {
 	return (
@@ -36,6 +37,7 @@ const Router = () => {
 				<Landing />
 				<About />
 				<Projects />
+				<Contact />
 			</div>
 			<SideLinks />
 		</BrowserRouter>
