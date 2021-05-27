@@ -23,9 +23,12 @@ const Landing = () => {
 				<HashLink to="/#Contact" className="link-button">
 					Contact!
 				</HashLink>
-				<HashLink to="/#" className="link-button">
+				<a
+					target="blank"
+					href="https://drive.google.com/uc?export=download&id=1TnUvSZo7lijHOwmRKb4qYQxvkpMIm60U"
+					className="link-button">
 					Resume
-				</HashLink>
+				</a>
 			</span>
 
 			<HashLink smooth id="chevron" to="/#About">
