@@ -3,7 +3,6 @@
 	margin: auto;
 	display: grid;
 	grid-template-columns: 45% 55%;
-	margin-bottom: 5rem;
 	margin-top: 5rem;
 
 	.project-preview {
@@ -141,19 +140,27 @@
 		.Project {
 			grid-template-columns: 100%;
 			.project-preview {
+				width: 90%;
+				margin: auto;
 				justify-content: center;
 				.image {
 					box-shadow: 0 0 0 2px $accent-sec;
 					img {
 						transform: none;
+						filter: brightness(0.9);
 					}
+				}
+			}
+			&:hover {
+				.project-preview img {
+					filter: brightness(1);
 				}
 			}
 
 			.project-info {
 				border-radius: 0.75rem;
 				padding: 0.75rem 1rem;
-				margin-top: -5rem;
+				margin-top: -3rem;
 				z-index: 2;
 			}
 		}

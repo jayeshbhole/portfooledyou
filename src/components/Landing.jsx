@@ -19,7 +19,7 @@ const Landing = () => {
 				Undergraduate @ IIIT Pune
 			</span>
 			<span id="cta">
-				<HashLink to="/#Contact" className="link-button">
+				<HashLink smooth to="/#Contact" className="link-button">
 					Contact!
 				</HashLink>
 				<a
