@@ -1,10 +1,9 @@
-# portfooledyou
+# PortfooledYou
+
+![](./screenshot.png)
 
 A portfolio ReactJS Website by (@jayeshbhole)[https://github.com/jayeshbhole].
-Hosted at .: \_\_\_ (not hosted. yet.)
-
-Sneak Peaks:
-!()[./designs/sneakPeak.png]
+Hosted at .: (jayeshbhole.github.io/portfooledyou)[https://jayeshbhole.github.io/portfooledyou] (not hosted. yet.)
 
 ## To run locally:
 
