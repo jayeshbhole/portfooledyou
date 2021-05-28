@@ -1,5 +1,4 @@
 import "../scss/Contact.scss";
-import { useForm } from "react-hook-form";
 import {
 	RiInstagramLine,
 	RiMediumFill,
@@ -9,16 +8,6 @@ import {
 } from "react-icons/ri";
 
 const Contact = () => {
-	const {
-		register,
-		handleSubmit,
-		watch,
-		formState: { errors },
-	} = useForm();
-
-	const message = watch("message");
-	const onSubmit = (data) => {};
-
 	return (
 		<section id="Contact">
 			<h2>Contact Me</h2>
@@ -50,50 +39,6 @@ const Contact = () => {
 						<RiInstagramLine /> <span>Instagram</span>
 					</div>
 				</a>
-			</div>
-			<br />
-			<br />
-			<h3>Or Drop a Quick Mail</h3>
-			<div className="form">
-				<form onSubmit={handleSubmit(onSubmit)}>
-					<label>
-						Name&nbsp; {errors.name && <span className="error">Required</span>}
-						<input
-							placeholder="Jane Doe"
-							aria-invalid={errors.name ? "true" : "false"}
-							{...register("name", { required: true, minLength: 3 })}
-						/>
-					</label>
-					<label>
-						Email&nbsp; {errors.email && <span className="error">Required</span>}
-						<input
-							type="email"
-							placeholder="jane.doe@email.com"
-							aria-invalid={errors.email ? "true" : "false"}
-							{...register("email", { required: true })}
-						/>
-					</label>
-					<label>
-						Your Message&nbsp;{" "}
-						{errors.message?.type === "required" && (
-							<span className="error">Required</span>
-						)}
-						{errors.message?.type === "maxLength" && (
-							<span className="error">Max Length Exceeded</span>
-						)}
-						<textarea
-							placeholder="👋  Hello"
-							{...register("message", {
-								required: true,
-								minLength: 5,
-								maxLength: 1000,
-							})}
-							aria-invalid={errors.message ? "true" : "false"}
-						/>
-					</label>
-					<br />
-					<input type="submit" value="Send Message" />
-				</form>
 			</div>
 		</section>
 	);
