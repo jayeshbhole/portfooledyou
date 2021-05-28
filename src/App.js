@@ -2,6 +2,8 @@
 import { BrowserRouter } from "react-router-dom";
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import ReactGA from "react-ga";
+
 // Styles
 import "./scss/main.scss";
 import "./scss/landing.scss";
@@ -12,6 +14,9 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import SideLinks from "./components/SideLinks";
 import Contact from "./components/Contact";
+
+ReactGA.initialize("G-8ZSL82QDFT");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 	return (
