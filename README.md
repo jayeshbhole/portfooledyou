@@ -2,8 +2,9 @@
 
 ![](./screenshot.png)
 
-A portfolio ReactJS Website by (@jayeshbhole)[https://github.com/jayeshbhole].
-Hosted at .: (jayeshbhole.github.io/portfooledyou)[https://jayeshbhole.github.io/portfooledyou] (not hosted. yet.)
+A portfolio ReactJS Website.
+
+Hosted at .: (jayeshbhole.github.io/portfooledyou)[https://jayeshbhole.github.io/portfooledyou] 
 
 ## To run locally:
 
