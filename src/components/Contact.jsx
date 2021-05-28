@@ -1,5 +1,12 @@
 import "../scss/Contact.scss";
 import { useForm } from "react-hook-form";
+import {
+	RiInstagramLine,
+	RiMediumFill,
+	RiGithubLine,
+	RiMailOpenLine,
+	RiLinkedinFill,
+} from "react-icons/ri";
 
 const Contact = () => {
 	const {
@@ -10,18 +17,44 @@ const Contact = () => {
 	} = useForm();
 
 	const message = watch("message");
-	const onSubmit = (data) => {
-		
-	};
+	const onSubmit = (data) => {};
 
 	return (
 		<section id="Contact">
 			<h2>Contact Me</h2>
+			<h3>Find Me Here</h3>
+
 			<div className="social">
-				<h3>Find What I am Up To</h3>
+				<a target="blank" href="https://github.com/jayeshbhole">
+					<div className="item">
+						<RiGithubLine /> <span>GitHub</span>
+					</div>
+				</a>
+				<a target="blank" href="https://www.linkedin.com/in/jayesh-bhole-701086193/">
+					<div className="item">
+						<RiLinkedinFill /> <span>LinkedIn</span>
+					</div>
+				</a>
+				<a target="blank" href="https://medium.com/@jayeshbhole123">
+					<div className="item">
+						<RiMediumFill /> <span>Medium</span>
+					</div>
+				</a>
+				<a target="blank" href="mailto:jayeshbhole123@gmail.com">
+					<div className="item">
+						<RiMailOpenLine /> <span>Mail</span>
+					</div>
+				</a>
+				<a target="blank" href="https://instagram.com/jayeshbhole_">
+					<div className="item">
+						<RiInstagramLine /> <span>Instagram</span>
+					</div>
+				</a>
 			</div>
+			<br />
+			<br />
+			<h3>Or Drop a Quick Mail</h3>
 			<div className="form">
-				<h3>Drop A Quick Mail</h3>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<label>
 						Name&nbsp; {errors.name && <span className="error">Required</span>}
