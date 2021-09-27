@@ -4,7 +4,7 @@
 
 A portfolio ReactJS Website.
 
-Hosted at .: (jayeshbhole.github.io/portfooledyou)[https://jayeshbhole.github.io/portfooledyou] 
+Hosted at .: [jayeshbhole.github.io/portfooledyou](https://jayeshbhole.github.io/portfooledyou)
 
 ## To run locally:
 
