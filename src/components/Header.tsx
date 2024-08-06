@@ -1,28 +1,64 @@
+import { links } from "@/constants/data";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface HeaderProps {
   name: string;
-  title: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ name, title }) => {
+const Header: React.FC<HeaderProps> = ({ name }) => {
   return (
-    <header className="py-8">
-      <h1 className="mb-2 text-4xl font-bold">{name}</h1>
-      <p className="text-xl">{title}</p>
-      <div className="mt-4 flex space-x-4">
-        <a href="#" className="text-blue-400 hover:text-blue-300">
-          Devfolio
-        </a>
-        <a href="#" className="text-blue-400 hover:text-blue-300">
-          Github
-        </a>
-        <a href="#" className="text-blue-400 hover:text-blue-300">
-          Twitter
-        </a>
-        <a href="#" className="text-blue-400 hover:text-blue-300">
-          v1 Portfolio
-        </a>
+    <header className="mt-16 flex flex-col gap-2">
+      <Image
+        src="/images/pfp.png"
+        alt="Profile Picture"
+        width={512}
+        height={512}
+        className="h-32 w-32 cursor-pointer rounded-xl transition-colors hover:bg-white/5"
+      />
+
+      <h1 className="item-cell text-4xl font-bold">
+        <span>{name}</span>
+      </h1>
+
+      <div className="mt-4 grid grid-cols-2">
+        <ul className="flex list-inside list-disc flex-col">
+          <li className="item-cell">
+            <span>Developer (Self && Web3)</span>
+          </li>
+          <li className="item-cell">
+            <span>Designer</span>
+          </li>
+          <li className="item-cell">
+            <span>
+              B.Tech ECE,{" "}
+              <Link
+                className="ml-[1ch]"
+                href="https://iiitp.ac.in"
+                target="_blank"
+              >
+                @IIIT Pune
+              </Link>
+            </span>
+          </li>
+        </ul>
+
+        <ul className="grid grid-cols-2">
+          {links.map((link, index) => (
+            <li key={index} className="item-cell">
+              <Link
+                href={link.href}
+                className="group flex h-full w-full items-center"
+                target="_blank"
+              >
+                <ArrowRight className="ease-bouncy mr-[1ch] inline-block h-4 w-4 transition-transform duration-300 group-hover:-rotate-45" />
+                <span>{link.name}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </header>
   );
