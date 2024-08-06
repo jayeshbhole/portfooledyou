@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#09053a" />
-		<meta
-			name="description"
-			content="Hello! I am Jayesh Bhole, web developer and designer... Check Out the site for more information"
-		/>
-		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-		<meta
-			name="google-site-verification"
-			content="JB6NZCAEc44jQzT5ly_u0bZnD7MKTOl6nRdtt_mKlnE"
-		/>
-		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-		<title>Jayesh Bhole</title>
-	</head>
-	<body>
-		<noscript>You need to enable JavaScript to run this app.</noscript>
-		<div id="root"></div>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#09053a" />
+        <meta
+            name="description"
+            content="Hello! I am Jayesh Bhole, web developer and designer... Check out the site for more information"
+        />
+        <meta property="og:title" content="Jayesh Bhole" />
+        <meta property="og:type" content="metadata" />
+        <meta property="og:url" content="https://jayeshbhole.github.io" />
+        <meta
+            property="og:description"
+            content="Hello! I am Jayesh Bhole, web developer and designer... Check Out the site for more information"
+        />
+        <meta
+            property="og:image"
+            content="https://jayeshbhole.github.io/logo192.png"
+        />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <meta
+            name="google-site-verification"
+            content="JB6NZCAEc44jQzT5ly_u0bZnD7MKTOl6nRdtt_mKlnE"
+        />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-8ZSL82QDFT"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-8ZSL82QDFT");
+        </script>
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <title>Jayesh Bhole</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
 </html>
