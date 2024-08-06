@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    @apply bg-neutral-100 text-neutral-900;
+    @apply dark:bg-neutral-900 dark:text-neutral-300;
+  }
+
+  a {
+    @apply font-medium underline decoration-blue-600 underline-offset-4;
+    @apply mx-[0.5ch] text-neutral-700 hover:text-neutral-800;
+    /* dark */
+    @apply relative dark:text-neutral-400 dark:hover:text-neutral-300;
+  }
+
+  body {
+    @apply font-[400] leading-relaxed tracking-wide;
+  }
+}
+
+@layer components {
+  .item-cell {
+    @apply flex items-center;
+    @apply w-full cursor-pointer rounded-md transition-colors duration-75 hover:bg-white/5;
+  }
+  /* apply padding for item-cell without any children */
+  .item-cell > *:not(:first-child) {
+    @apply pl-2;
+  }
+  .item-cell > * {
+    @apply w-full px-2 py-1;
+  }
+}
