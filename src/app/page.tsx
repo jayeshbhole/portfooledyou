@@ -1,37 +1,75 @@
-import Link from "next/link";
+import React from "react";
+import Header from "@/components/Header";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import RandomSection from "@/components/RandomSection";
 
-export default function HomePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-      </div>
-    </main>
-  );
+interface ExperienceItem {
+  company: string;
+  position: string;
+  duration: string;
+  description: string[];
 }
+
+interface ProjectItem {
+  name: string;
+  date: string;
+  description: string[];
+}
+
+interface AppData {
+  name: string;
+  title: string;
+  about: string;
+  experience: ExperienceItem[];
+  projects: ProjectItem[];
+}
+
+const dummyData: AppData = {
+  name: "Jayesh",
+  title: "Developer (Self && Web3)",
+  about:
+    "I want to be part of the reason your users tweet about how good the app feels. Why? Cause it puts a stupidly wide smile on my face :)",
+  experience: [
+    {
+      company: "StakeEase",
+      position: "Founding Engineer & Designer",
+      duration: "Jan 2024 - Current",
+      description: [
+        "Designed and built the user interface for stakeease.com to facilitate smoother and 60% cheaper restaking transactions.",
+        "Gathered insights with PostHog about user flows, UI interactions and usage patterns.",
+        "Worked on indexing defi positions of users for Uniswap V3-like liquidity pools.",
+      ],
+    },
+    // Add more experience items here
+  ],
+  projects: [
+    {
+      name: "One - AA Human Wallet",
+      date: "Apr 2023",
+      description: [
+        "Built at EthIndia Fellowship 3.0",
+        "ERC4337 Wallet with SMS onboarding and account usernames",
+        "On-chain session keys for multi device login and spending limits for sessions",
+      ],
+    },
+    // Add more projects here
+  ],
+};
+
+const App: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <div className="container mx-auto px-4">
+        <Header name={dummyData.name} title={dummyData.title} />
+        <About about={dummyData.about} />
+        <Experience experience={dummyData.experience} />
+        <Projects projects={dummyData.projects} />
+        <RandomSection />
+      </div>
+    </div>
+  );
+};
+
+export default App;
