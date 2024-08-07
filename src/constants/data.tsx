@@ -9,11 +9,12 @@ interface ExperienceItem {
   description: Array<ReactElement | string>;
 }
 
-interface ProjectItem {
+export interface ProjectItem {
   name: string;
   date: string;
   description: Array<ReactElement | string>;
   link: string;
+  tech: string[];
 }
 
 interface AppData {
@@ -89,7 +90,13 @@ export const appData: AppData = {
       duration: "Jan 2023 - Apr 2023",
       description: [
         "Performed UX research of crypto wallets and interviewed users from different demographics.",
-        "Designed and implemented an account abstraction based wallet based on ERC 4337 in Solidity, React and Pimlico SDK.",
+        <span>
+          Designed and implemented an{" "}
+          <Link href="https://devfolio.co/projects/one-aa-human-wallet-3bbb">
+            account abstracted wallet
+          </Link>{" "}
+          based on ERC 4337 in Solidity, React and Pimlico SDK.",
+        </span>,
         "Added onboarding with phone numbers to the wallet which simplifies the onboarding process and reduces overhead of storing seed phrases.",
       ],
     },
@@ -126,11 +133,19 @@ export const appData: AppData = {
       name: "One - AA Human Wallet",
       date: "Apr 2023",
       description: [
-        "Built at EthIndia Fellowship 3.0",
-        "ERC4337 Wallet with SMS onboarding and account usernames",
-        "On-chain session keys for multi device login and spending limits for sessions",
+        "Built at EthIndia Fellowship 3.0.",
+        "ERC4337 Wallet with SMS onboarding and account usernames.",
+        "On-chain session keys for multi device login and spending limits for sessions.",
       ],
-      link: "",
+      link: "https://devfolio.co/projects/one-aa-human-wallet-3bbb",
+      tech: [
+        "ERC4337",
+        "Solidity",
+        "React",
+        "Typescript",
+        "Firebase",
+        "Web3Auth",
+      ],
     },
     {
       name: "Panda Wallet",
@@ -139,44 +154,49 @@ export const appData: AppData = {
         <>🏆 at EthIndia Hackathon 2023</>,
         "ERC4337 Wallet with social recovery and guardians",
       ],
-      link: "",
+      link: "https://devfolio.co/projects/panda-wallet-698f",
+      tech: ["Solidity", "React", "ERC4337", "Covalent"],
     },
     {
       name: "Samrajya DAO",
       date: "Aug 2022",
       description: [
         "Chess DAO to support players and build a community around chess",
-        "Built with React, Solidity and Hardhat",
+        "Built with React, Solidity and Hardhat.",
       ],
-      link: "",
+      link: "https://devfolio.co/projects/samrajya-dao-4d97",
+      tech: ["React", "Solidity", "Hardhat"],
     },
     {
       name: "Stroller Protocol",
       date: "Feb 2022",
       description: [
-        <>🏆 at ETHGlobal's Road to Web3</>,
-        "Automated top up service for Superfluid streams",
+        <>🏆 at ETHGlobal's Road to Web3.</>,
+        "Automated top up service for Superfluid streams.",
       ],
-      link: "",
+      link: "https://ethglobal.com/showcase/stroller-protocol-3x6sy",
+      tech: ["The Graph", "ChainLink", "React", "Chakra UI"],
     },
     {
       name: "Shatranj",
       date: "Dec 2021",
       description: [
-        <>🏆 at Polygon BUIDLIT</>,
-        "Web based chess dapp with staking and just-in-time generated NFTs for winners",
+        <>🏆 at Polygon BUIDLIT.</>,
+        "Web based chess dapp with staking and just-in-time generated NFTs for winners.",
       ],
-      link: "",
+      link: "https://devfolio.co/projects/shatranj-d063",
+      tech: ["IPFS", "Solidity", "Moralis Cloud", "HTML Canvas"],
     },
     {
       name: "Marsmello",
       date: "Aug 2021",
       description: [
-        <>🏆 at ETHOdyssey</>,
+        <>🏆 at ETHOdyssey.</>,
         "Truly decentralised game featuring NFTs, play-to-earn tokens and assets built and deployed on the Ethereum network.",
         "Built with React Spring, a browser based infinite 2D world game renderer.",
       ],
-      link: "",
+      link: "https://devfolio.co/projects/marsmello-a90e",
+      tech: ["React Spring", "The Graph"],
     },
   ],
 };
