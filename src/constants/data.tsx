@@ -13,6 +13,7 @@ interface ProjectItem {
   name: string;
   date: string;
   description: Array<ReactElement | string>;
+  link: string;
 }
 
 interface AppData {
@@ -46,7 +47,8 @@ export const appData: AppData = {
           <Link href="https://stakeease.com" target="_blank">
             stakeease.com
           </Link>{" "}
-          to provide a seamless experience for $5million+ restaked ETH.
+          facilitating the seamless management of over $5 million in restaked
+          Ethereum assets
         </span>,
         "Gathered insights with PostHog about user flows, UI interactions and usage patterns.",
         "Worked on indexing defi positions of users for Uniswap V3-like liquidity pools.",
@@ -76,7 +78,7 @@ export const appData: AppData = {
           serving as a repository to cross-chain intent adapters built on
           Router.
         </span>,
-        "Built Farcaster Frames to facilitate bridging from the farcaster feed of users.",
+        "Built Farcaster Frames to facilitate bridging from the Farcaster feed of users.",
         "Published multi-chain wallet connection SDK that supports over 25+ networks and their respective wallets with full support for sending transactions and fetching token data.",
         "Setup CI workflows to check for code quality and build issues with GitHub actions.",
       ],
@@ -96,7 +98,7 @@ export const appData: AppData = {
       position: "Blockchain Intern",
       duration: "Aug 2022 - Jan 2023",
       description: [
-        "Worked on UI features and redesign for Dfyn in React using Redux, Material UI and Tailwind CSS.",
+        "Worked on UI features and redesign for Dfyn Exchange in React using Redux, Material UI and Tailwind CSS.",
         "Built analytics web app with Svelte and subgraphs with The Graph to index trades and extract liquidity data for users and exchange pools.",
       ],
     },
@@ -128,44 +130,54 @@ export const appData: AppData = {
         "ERC4337 Wallet with SMS onboarding and account usernames",
         "On-chain session keys for multi device login and spending limits for sessions",
       ],
+      link: "",
     },
     {
-      name: "One - AA Human Wallet",
-      date: "Apr 2023",
+      name: "Panda Wallet",
+      date: "Dec 2022",
       description: [
-        "Built at EthIndia Fellowship 3.0",
-        "ERC4337 Wallet with SMS onboarding and account usernames",
-        "On-chain session keys for multi device login and spending limits for sessions",
+        <>🏆 at EthIndia Hackathon 2023</>,
+        "ERC4337 Wallet with social recovery and guardians",
       ],
+      link: "",
     },
     {
-      name: "One - AA Human Wallet",
-      date: "Apr 2023",
+      name: "Samrajya DAO",
+      date: "Aug 2022",
       description: [
-        "Built at EthIndia Fellowship 3.0",
-        "ERC4337 Wallet with SMS onboarding and account usernames",
-        "On-chain session keys for multi device login and spending limits for sessions",
+        "Chess DAO to support players and build a community around chess",
+        "Built with React, Solidity and Hardhat",
       ],
+      link: "",
     },
     {
-      name: "One - AA Human Wallet",
-      date: "Apr 2023",
+      name: "Stroller Protocol",
+      date: "Feb 2022",
       description: [
-        "Built at EthIndia Fellowship 3.0",
-        "ERC4337 Wallet with SMS onboarding and account usernames",
-        "On-chain session keys for multi device login and spending limits for sessions",
+        <>🏆 at ETHGlobal's Road to Web3</>,
+        "Automated top up service for Superfluid streams",
       ],
+      link: "",
     },
     {
-      name: "One - AA Human Wallet",
-      date: "Apr 2023",
+      name: "Shatranj",
+      date: "Dec 2021",
       description: [
-        "Built at EthIndia Fellowship 3.0",
-        "ERC4337 Wallet with SMS onboarding and account usernames",
-        "On-chain session keys for multi device login and spending limits for sessions",
+        <>🏆 at Polygon BUIDLIT</>,
+        "Web based chess dapp with staking and just-in-time generated NFTs for winners",
       ],
+      link: "",
     },
-    // Add more projects here
+    {
+      name: "Marsmello",
+      date: "Aug 2021",
+      description: [
+        <>🏆 at ETHOdyssey</>,
+        "Truly decentralised game featuring NFTs, play-to-earn tokens and assets built and deployed on the Ethereum network.",
+        "Built with React Spring, a browser based infinite 2D world game renderer.",
+      ],
+      link: "",
+    },
   ],
 };
 
