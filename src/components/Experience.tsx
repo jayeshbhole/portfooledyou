@@ -15,7 +15,7 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
   return (
     <section className="flex flex-col gap-2">
       <h2 className="item-cell text-2xl font-semibold tracking-wide">
-        <span>Places I've been</span>
+        <span>Places I&apos;ve been</span>
       </h2>
 
       {experience.map((job, index) => (
