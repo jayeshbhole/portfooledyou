@@ -1,8 +1,8 @@
-import { CSPostHogProvider } from "@/app/provider";
+import PostHogPageView from "@/components/Posthog/PostHogPageView";
+import { CSPostHogProvider } from "@/components/Posthog/PostHogProvider";
 import "@/styles/globals.css";
-
-import { Open_Sans as Font } from "next/font/google";
 import { type Metadata } from "next";
+import { Open_Sans as Font } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Jayesh Bhole",
@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${font.className}`}>
       <CSPostHogProvider>
+        <PostHogPageView />
         <body>{children}</body>
       </CSPostHogProvider>
     </html>
