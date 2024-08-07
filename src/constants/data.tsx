@@ -49,7 +49,7 @@ export const appData: AppData = {
             stakeease.com
           </Link>{" "}
           facilitating the seamless management of over $5 million in restaked
-          Ethereum assets
+          Ethereum assets.
         </span>,
         "Gathered insights with PostHog about user flows, UI interactions and usage patterns.",
         "Worked on indexing defi positions of users for Uniswap V3-like liquidity pools.",
@@ -87,7 +87,7 @@ export const appData: AppData = {
     {
       company: "EthIndia Fellowship",
       position: "Fellow",
-      duration: "Jan 2023 - Apr 2023",
+      duration: "Feb 2023 - Apr 2023",
       description: [
         "Performed UX research of crypto wallets and interviewed users from different demographics.",
         <span>
@@ -103,7 +103,7 @@ export const appData: AppData = {
     {
       company: "Router Protocol",
       position: "Blockchain Intern",
-      duration: "Aug 2022 - Jan 2023",
+      duration: "Aug 2022 - Feb 2023",
       description: [
         "Worked on UI features and redesign for Dfyn Exchange in React using Redux, Material UI and Tailwind CSS.",
         "Built analytics web app with Svelte and subgraphs with The Graph to index trades and extract liquidity data for users and exchange pools.",
