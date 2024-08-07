@@ -95,7 +95,7 @@ export const appData: AppData = {
           <Link href="https://devfolio.co/projects/one-aa-human-wallet-3bbb">
             account abstracted wallet
           </Link>{" "}
-          based on ERC 4337 in Solidity, React and Pimlico SDK.",
+          based on ERC 4337 in Solidity, React and Pimlico SDK.
         </span>,
         "Added onboarding with phone numbers to the wallet which simplifies the onboarding process and reduces overhead of storing seed phrases.",
       ],
@@ -171,7 +171,7 @@ export const appData: AppData = {
       name: "Stroller Protocol",
       date: "Feb 2022",
       description: [
-        <>🏆 at ETHGlobal's Road to Web3.</>,
+        <>🏆 at ETHGlobal&apos;s Road to Web3.</>,
         "Automated top up service for Superfluid streams.",
       ],
       link: "https://ethglobal.com/showcase/stroller-protocol-3x6sy",
