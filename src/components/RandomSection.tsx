@@ -7,9 +7,15 @@ interface RandomItem {
 }
 
 const items: RandomItem[] = [
-  { image: "/images/eclectic.png", title: "Literary Club of IIIT Pune" },
+  {
+    image: "/images/eclectic.png",
+    title: "Logo Iterations - Literary Club of IIIT Pune",
+  },
   { image: "/images/lamhein.png", title: "An invitation to create memories" },
-  { image: "/images/eclectic.png", title: "Literary Club of IIIT Pune" },
+  {
+    image: "/images/eclectic2.png",
+    title: "Logo Iterations - Literary Club of IIIT Pune",
+  },
   {
     image: "/images/shatranj.png",
     title: "Just-in-time generated NFT for winners of Shatranj",
