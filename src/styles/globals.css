@@ -25,7 +25,7 @@
 @layer components {
   .item-cell {
     @apply flex items-center;
-    @apply w-full cursor-pointer rounded-md transition-colors duration-75 hover:bg-white/5;
+    @apply w-full rounded-md transition-colors duration-75 hover:bg-white/5;
   }
   /* apply padding for item-cell without any children */
   .item-cell > *:not(:first-child) {
