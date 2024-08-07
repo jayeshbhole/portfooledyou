@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ name }) => {
         <span>{name}</span>
       </h1>
 
-      <div className="mt-4 grid grid-cols-2">
+      <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-0">
         <ul className="flex list-inside list-disc flex-col">
           <li className="item-cell">
             <div className="h-4 w-[2.5ch] self-start pt-3 leading-[1]">

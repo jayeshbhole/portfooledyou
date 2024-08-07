@@ -17,14 +17,16 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
       {projects.map((project, index) => (
         <>
           <div key={index} className="my-1 flex flex-col gap-2">
-            <div className="item-cell flex w-full justify-between whitespace-nowrap">
-              <h3 className="flex flex-1 gap-1 text-base font-medium">
+            <div className="item-cell flex w-full flex-wrap justify-between sm:flex-nowrap">
+              <h3 className="flex w-full flex-1 gap-1 text-base font-medium sm:w-fit">
                 <Link href={project.link} target="_blank">
                   <span>{project.name}</span>
                 </Link>
               </h3>
 
-              <p className="text-right italic opacity-50">{project.date}</p>
+              <p className="w-fit text-right italic opacity-50">
+                {project.date}
+              </p>
             </div>
 
             <ul className="flex list-inside list-none flex-col gap-1">

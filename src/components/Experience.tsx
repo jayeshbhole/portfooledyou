@@ -21,13 +21,17 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
       {experience.map((job, index) => (
         <>
           <div key={index} className="my-1 flex flex-col">
-            <div className="item-cell flex w-full justify-between whitespace-nowrap">
-              <h3 className="flex flex-1 gap-1 text-base font-medium">
-                <span>{job.company}</span>
-                <p className="font-normal italic">- {job.position}</p>
+            <div className="item-cell flex w-full flex-wrap justify-between sm:flex-nowrap">
+              <h3 className="flex w-full flex-1 flex-wrap text-base font-medium sm:w-fit sm:gap-1">
+                <span className="w-full sm:w-fit">{job.company}</span>
+                <p className="whitespace-nowrap font-normal italic">
+                  {job.position}
+                </p>
               </h3>
 
-              <p className="text-right italic opacity-50">{job.duration}</p>
+              <p className="w-full italic opacity-50 sm:w-fit sm:text-right">
+                {job.duration}
+              </p>
             </div>
 
             <ul className="mt-2 flex list-inside list-none flex-col gap-1">
