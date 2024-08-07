@@ -9,7 +9,7 @@ import { appData } from "@/constants/data";
 const App: React.FC = () => {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto mt-16 flex max-w-[80ch] flex-col gap-10 px-4 print:mt-4 print:max-w-max">
+      <div className="container mx-auto mt-16 flex max-w-[80ch] flex-col gap-16 px-4 print:mt-4 print:max-w-max">
         <Header name={appData.name} />
         <About about={appData.about} />
         <Experience experience={appData.experience} />
