@@ -3,6 +3,7 @@ import { CSPostHogProvider } from "@/components/Posthog/PostHogProvider";
 import "@/styles/globals.css";
 import { type Metadata } from "next";
 import { Open_Sans as Font } from "next/font/google";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Jayesh Bhole",
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${font.className}`}>
       <CSPostHogProvider>
-        <PostHogPageView />
+        <Suspense>
+          <PostHogPageView />
+        </Suspense>
         <body>{children}</body>
       </CSPostHogProvider>
     </html>
