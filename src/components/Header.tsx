@@ -26,12 +26,27 @@ const Header: React.FC<HeaderProps> = ({ name }) => {
       <div className="mt-4 grid grid-cols-2">
         <ul className="flex list-inside list-disc flex-col">
           <li className="item-cell">
+            <div className="h-4 w-[2.5ch] self-start pt-3 leading-[1]">
+              <div className="h-1.5 w-1.5 rounded-full bg-neutral-500 text-transparent print:text-neutral-500">
+                •
+              </div>
+            </div>
             <span>Developer (Self && Web3)</span>
           </li>
           <li className="item-cell">
+            <div className="h-4 w-[2.5ch] self-start pt-3 leading-[1]">
+              <div className="h-1.5 w-1.5 rounded-full bg-neutral-500 text-transparent print:text-neutral-500">
+                •
+              </div>
+            </div>
             <span>Designer</span>
           </li>
           <li className="item-cell">
+            <div className="h-4 w-[2.5ch] self-start pt-3 leading-[1]">
+              <div className="h-1.5 w-1.5 rounded-full bg-neutral-500 text-transparent print:text-neutral-500">
+                •
+              </div>
+            </div>
             <span>
               B.Tech ECE,{" "}
               <Link
