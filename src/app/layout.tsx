@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${font.className}`}>
       <CSPostHogProvider>
-        <Suspense>
+        <body>
           <PostHogPageView />
-        </Suspense>
-        <body>{children}</body>
+          {children}
+        </body>
       </CSPostHogProvider>
     </html>
   );
