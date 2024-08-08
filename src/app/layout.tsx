@@ -1,9 +1,16 @@
-import PostHogPageView from "@/components/Posthog/PostHogPageView";
 import { CSPostHogProvider } from "@/components/Posthog/PostHogProvider";
 import "@/styles/globals.css";
 import { type Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Open_Sans as Font } from "next/font/google";
 import { Suspense } from "react";
+
+const PostHogPageView = dynamic(
+  () => import("@/components/Posthog/PostHogPageView"),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata: Metadata = {
   title: "Jayesh Bhole",
