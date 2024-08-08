@@ -16,7 +16,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
       {/* make projects similar to experience map */}
       {projects.map((project, index) => (
         <>
-          <div key={index} className="my-1 flex flex-col gap-2">
+          <div key={index + "c"} className="my-1 flex flex-col gap-2">
             <div className="item-cell flex w-full flex-wrap justify-between sm:flex-nowrap">
               <h3 className="flex w-full flex-1 gap-1 text-base font-medium sm:w-fit">
                 <Link href={project.link} target="_blank">
@@ -53,7 +53,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             </div>
           </div>
 
-          <hr className="mb-1 border-t border-neutral-300/25 dark:border-neutral-700/25" />
+          <hr
+            key={index + "hr"}
+            className="mb-1 border-t border-neutral-300/25 dark:border-neutral-700/25"
+          />
         </>
       ))}
     </section>
