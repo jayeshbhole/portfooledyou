@@ -30,7 +30,7 @@ export const appData: AppData = {
   title: "Developer (Self && Web3)",
   // about: `I want to be part of the reason your users tweet about how good the app feels. Why? Cause it puts a stupidly wide smile on my face :)`,
   about: (
-    <span>
+    <span key="1">
       I want to be part of the reason your users tweet about how good the app
       feels.
       <br />
@@ -43,7 +43,7 @@ export const appData: AppData = {
       position: "Founding Engineer & Designer",
       duration: "Jan 2024 - Current",
       description: [
-        <span>
+        <span key="1">
           Designed and built the user interface for{" "}
           <Link href="https://stakeease.com" target="_blank">
             stakeease.com
@@ -60,18 +60,18 @@ export const appData: AppData = {
       position: "Fullstack Developer",
       duration: "May 2023 - Current",
       description: [
-        <span>
+        <span key="1">
           Built a micro-service for Router Chain with Go that produces analytics
           for over 5,000 cross-chain events daily.
         </span>,
-        <span>
+        <span key="2">
           Developed a scalable frontend framework to create{" "}
           <Link href="https://poc.routerintents.com/all" target="_blank">
             PoC intent-based apps{" "}
           </Link>
           which reduced development efforts and upkeep time by <b>60-70%.</b>
         </span>,
-        <span>
+        <span key="3">
           Designed and built{" "}
           <Link href="https://store.routerintents.com" target="_blank">
             Adapter Store
@@ -90,7 +90,7 @@ export const appData: AppData = {
       duration: "Feb 2023 - Apr 2023",
       description: [
         "Performed UX research of crypto wallets and interviewed users from different demographics.",
-        <span>
+        <span key="1">
           Designed and implemented an{" "}
           <Link href="https://devfolio.co/projects/one-aa-human-wallet-3bbb">
             account abstracted wallet

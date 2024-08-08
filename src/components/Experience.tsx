@@ -20,7 +20,7 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
 
       {experience.map((job, index) => (
         <>
-          <div key={index} className="my-1 flex flex-col">
+          <div key={index + "c"} className="my-1 flex flex-col">
             <div className="item-cell flex w-full flex-wrap justify-between sm:flex-nowrap">
               <h3 className="flex w-full flex-1 flex-wrap text-base font-medium sm:w-fit sm:gap-1">
                 <span className="w-full sm:w-fit">{job.company}</span>
@@ -49,7 +49,10 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
             </ul>
           </div>
 
-          <hr className="mb-1 border-t border-neutral-300/25 dark:border-neutral-700/25" />
+          <hr
+            key={index + "hr"}
+            className="mb-1 border-t border-neutral-300/25 dark:border-neutral-700/25"
+          />
         </>
       ))}
     </section>
