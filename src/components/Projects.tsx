@@ -1,4 +1,5 @@
 import { ProjectItem } from "@/constants/data";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 
@@ -18,11 +19,15 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         <>
           <div key={index + "c"} className="my-1 flex flex-col gap-2">
             <div className="item-cell flex w-full flex-wrap justify-between sm:flex-nowrap">
-              <h3 className="flex w-full flex-1 gap-1 text-base font-medium sm:w-fit">
-                <Link href={project.link} target="_blank">
-                  <span>{project.name}</span>
-                </Link>
-              </h3>
+              <Link
+                href={project.link}
+                target="_blank"
+                className="group flex w-full flex-1 items-center gap-1 text-base font-medium sm:w-fit"
+              >
+                <span>{project.name}</span>
+
+                <ArrowRight className="ml-[0.75ch] inline-block h-4 w-4 transition-transform duration-300 ease-bouncy group-hover:-rotate-45" />
+              </Link>
 
               <p className="w-fit text-right italic opacity-50">
                 {project.date}
