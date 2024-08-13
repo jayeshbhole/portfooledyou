@@ -55,7 +55,7 @@ const RandomSection: React.FC = () => {
               height={500}
               className="block w-full max-w-lg select-none rounded object-cover"
             />
-            <p className="text-sm text-neutral-700 dark:text-neutral-200">
+            <p className="text-sm text-neutral-200">
               {items[maximized]!.title}
             </p>
           </div>
