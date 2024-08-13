@@ -47,13 +47,13 @@ const RandomSection: React.FC = () => {
           }}
           open={open && maximized < items.length}
         >
-          <div className="relative flex h-fit w-fit translate-y-12 cursor-pointer flex-col items-center gap-2 rounded-md p-4 py-8 text-center transition-transform hover:bg-white/5 group-open:translate-y-0">
+          <div className="relative flex translate-y-12 cursor-pointer flex-col items-center gap-2 rounded-md p-4 py-8 text-center transition-transform hover:bg-white/5 group-open:translate-y-0">
             <Image
               src={items[maximized]!.image}
               alt={items[maximized]!.title}
               width={500}
               height={500}
-              className="block w-full max-w-64 select-none rounded object-cover"
+              className="block w-full max-w-lg select-none rounded object-cover"
             />
             <p className="text-sm text-neutral-700 dark:text-neutral-200">
               {items[maximized]!.title}
