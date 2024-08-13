@@ -8,6 +8,9 @@ export default {
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
       },
+      fontSize: {
+        "2sm": "0.875rem",
+      },
       transitionTimingFunction: {
         bouncy: "cubic-bezier(0.5, -1.5, 0.5, 2.5)",
       },
