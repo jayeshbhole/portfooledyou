@@ -64,7 +64,7 @@ const RandomSection: React.FC = () => {
 
       <section className="flex flex-col gap-2">
         <h2 className="item-cell text-2xl font-semibold tracking-wide">
-          <span>The `Random Designs` Section</span>
+          <span>The `Random` Section</span>
         </h2>
 
         <div className="mt-2 grid grid-cols-1 gap-8 sm:grid-cols-3">
