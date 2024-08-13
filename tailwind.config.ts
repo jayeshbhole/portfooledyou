@@ -15,7 +15,9 @@ export default {
         bouncy: "cubic-bezier(0.5, -1.5, 0.5, 2.5)",
       },
       screens: {
+        "2xs": "560px",
         xs: "480px",
+        xxs: "320px",
       },
     },
   },

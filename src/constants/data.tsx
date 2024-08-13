@@ -41,7 +41,7 @@ export const appData: AppData = {
   experience: [
     {
       company: "StakeEase",
-      position: "Founding Engineer & Designer",
+      position: "Founding Engineer, Designer",
       duration: "Jan 2024 - Current",
       image: "stakeease.png",
       description: [

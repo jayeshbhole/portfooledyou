@@ -25,20 +25,22 @@ const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
     <>
       <div className="group my-1 flex flex-col">
         <button className="item-cell flex w-full cursor-pointer flex-wrap items-center justify-between gap-2 outline-none group-focus-within:bg-white/5 sm:flex-nowrap">
-          <Image
-            src={`/images/work/${job.image}`}
-            alt={job.company}
-            width={64}
-            height={64}
-            className="object-fit ml-2 h-12 w-12 rounded-xl p-0"
-          />
+          <h3 className="2xs:w-fit flex w-full flex-wrap gap-4 text-left text-base font-medium">
+            <Image
+              src={`/images/work/${job.image}`}
+              alt={job.company}
+              width={64}
+              height={64}
+              className="object-fit ml-2 h-12 w-12 rounded-xl p-0"
+            />
 
-          <h3 className="flex w-fit flex-1 flex-col flex-wrap text-left text-base font-medium sm:gap-1">
-            <span className="">{job.position}</span>
-            <span className="text-2sm">{job.company}</span>
+            <div className="flex flex-col">
+              <span className="">{job.position}</span>
+              <span className="text-2sm">{job.company}</span>
+            </div>
           </h3>
 
-          <p className="w-fit italic opacity-50 sm:w-fit sm:text-right">
+          <p className="2xs:text-right w-fit italic opacity-50">
             {job.duration}
           </p>
         </button>
