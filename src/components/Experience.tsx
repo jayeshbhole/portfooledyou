@@ -1,7 +1,6 @@
-"use";
 import Image from "next/image";
-import React, { ReactNode, useState } from "react";
-import { ExperienceItem } from "../constants/data";
+import React from "react";
+import type { ExperienceItem } from "../constants/data";
 
 interface ExperienceProps {
   experience: ExperienceItem[];
@@ -34,12 +33,12 @@ const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
             className="object-fit ml-2 h-12 w-12 rounded-xl p-0"
           />
 
-          <h3 className="flex w-full flex-1 flex-col flex-wrap text-left text-base font-medium sm:w-fit sm:gap-1">
+          <h3 className="flex w-fit flex-1 flex-col flex-wrap text-left text-base font-medium sm:gap-1">
             <span className="">{job.position}</span>
             <span className="text-2sm">{job.company}</span>
           </h3>
 
-          <p className="w-full italic opacity-50 sm:w-fit sm:text-right">
+          <p className="w-fit italic opacity-50 sm:w-fit sm:text-right">
             {job.duration}
           </p>
         </button>
