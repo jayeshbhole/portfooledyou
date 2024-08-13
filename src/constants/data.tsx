@@ -2,9 +2,10 @@
 import Link from "next/link";
 import { ReactElement, ReactNode } from "react";
 
-interface ExperienceItem {
+export interface ExperienceItem {
   company: string;
   position: string;
+  image: string;
   duration: string;
   description: Array<ReactElement | string>;
 }
@@ -42,6 +43,7 @@ export const appData: AppData = {
       company: "StakeEase",
       position: "Founding Engineer & Designer",
       duration: "Jan 2024 - Current",
+      image: "stakeease.png",
       description: [
         <span key="1">
           Designed and built the user interface for{" "}
@@ -59,6 +61,7 @@ export const appData: AppData = {
       company: "Router Protocol",
       position: "Fullstack Developer",
       duration: "May 2023 - Current",
+      image: "router.png",
       description: [
         <span key="1">
           Built a micro-service for Router Chain with Go that produces analytics
@@ -79,7 +82,16 @@ export const appData: AppData = {
           serving as a repository to cross-chain intent adapters built on
           Router.
         </span>,
-        "Built Farcaster Frames to facilitate bridging from the Farcaster feed of users.",
+        <span key="4">
+          Built{" "}
+          <Link
+            href="https://warpcast.com/routerprotocol/0x8d5d3ebc"
+            target="_blank"
+          >
+            Farcaster Frames
+          </Link>{" "}
+          to facilitate bridging from the Farcaster feed of users.
+        </span>,
         "Published multi-chain wallet connection SDK that supports over 25+ networks and their respective wallets with full support for sending transactions and fetching token data.",
         "Setup CI workflows to check for code quality and build issues with GitHub actions.",
       ],
@@ -88,6 +100,7 @@ export const appData: AppData = {
       company: "EthIndia Fellowship",
       position: "Fellow",
       duration: "Feb 2023 - Apr 2023",
+      image: "eif.png",
       description: [
         "Performed UX research of crypto wallets and interviewed users from different demographics.",
         <span key="1">
@@ -104,6 +117,7 @@ export const appData: AppData = {
       company: "Router Protocol",
       position: "Blockchain Intern",
       duration: "Aug 2022 - Feb 2023",
+      image: "router.png",
       description: [
         "Worked on UI features and redesign for Dfyn Exchange in React using Redux, Material UI and Tailwind CSS.",
         "Built analytics web app with Svelte and subgraphs with The Graph to index trades and extract liquidity data for users and exchange pools.",
@@ -113,20 +127,21 @@ export const appData: AppData = {
       company: "Polygon Fellowship",
       position: "Fellow",
       duration: "Jun 2022 - Aug 2022",
+      image: "polygon.png",
       description: [
         "Built a Decentralised Autonomous Organisation with voting and treasury integration with Solidity, Hardhat.",
         "Worked on projects like lending/borrowing DeFi app, decentralised social media and deadman's switch.",
       ],
     },
-    {
-      company: "Myriad Technologies",
-      position: "Web3 Developer Intern",
-      duration: "May 2022 - Jun 2022",
-      description: [
-        "Developed a monorepo for a lending/borrowing protocol using Typescript, Solidity and Yarn.",
-        "Engineered contract deployment scripts for the said lending/borrowing protocol contracts using Hardhat.",
-      ],
-    },
+    // {
+    //   company: "Myriad Technologies",
+    //   position: "Web3 Developer Intern",
+    //   duration: "May 2022 - Jun 2022",
+    //   description: [
+    //     "Developed a monorepo for a lending/borrowing protocol using Typescript, Solidity and Yarn.",
+    //     "Engineered contract deployment scripts for the said lending/borrowing protocol contracts using Hardhat.",
+    //   ],
+    // },
   ],
   projects: [
     {
