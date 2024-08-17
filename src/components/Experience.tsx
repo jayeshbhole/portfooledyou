@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import type { ExperienceItem } from "../constants/data";
+import { cn } from "../utils";
 
 interface ExperienceProps {
   experience: ExperienceItem[];
@@ -21,11 +23,18 @@ const Experience: React.FC<ExperienceProps> = ({ experience }) => {
 };
 
 const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="group my-1 flex flex-col">
-        <button className="item-cell flex w-full cursor-pointer flex-wrap items-center justify-between gap-2 outline-none group-focus-within:bg-white/5 sm:flex-nowrap">
-          <h3 className="2xs:w-fit flex w-full flex-wrap gap-4 text-left text-base font-medium">
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className={cn(
+            "item-cell flex w-full cursor-pointer flex-wrap items-center justify-between gap-2 outline-none focus:outline sm:flex-nowrap",
+            open ? "bg-white/5" : "",
+          )}
+        >
+          <h3 className="flex w-full flex-wrap gap-4 text-left text-base font-medium 2xs:w-fit">
             <Image
               src={`/images/work/${job.image}`}
               alt={job.company}
@@ -40,12 +49,17 @@ const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
             </div>
           </h3>
 
-          <p className="2xs:text-right w-fit italic opacity-50">
+          <p className="w-fit italic opacity-50 2xs:text-right">
             {job.duration}
           </p>
         </button>
 
-        <ul className="mt-2 flex max-h-0 list-inside list-none flex-col gap-1 overflow-hidden transition-all duration-500 ease-in-out group-focus-within:max-h-screen">
+        <ul
+          className={cn(
+            "mt-2 flex list-inside list-none flex-col gap-1 overflow-hidden transition-all duration-500 ease-in-out",
+            open ? "max-h-screen" : "max-h-0",
+          )}
+        >
           {job.description.map((item, i) => (
             <li key={i} className="item-cell">
               <div className="h-4 w-[2.5ch] self-start pt-3 leading-[1]">
