@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import type { ExperienceItem } from "../constants/data";
 import { cn } from "../utils";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 interface ExperienceProps {
   experience: ExperienceItem[];
@@ -30,7 +31,7 @@ const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
         <button
           onClick={() => setOpen((v) => !v)}
           className={cn(
-            "item-cell flex w-full cursor-pointer flex-wrap items-center justify-between gap-2 outline-none focus:outline sm:flex-nowrap",
+            "item-cell flex w-full cursor-pointer flex-wrap items-center justify-between gap-2 outline-none focus:outline",
             open ? "bg-white/5" : "",
           )}
         >
@@ -40,7 +41,7 @@ const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
               alt={job.company}
               width={64}
               height={64}
-              className="object-fit ml-2 h-12 w-12 rounded-xl p-0"
+              className="object-fit h-12 w-12 rounded-xl p-0"
             />
 
             <div className="flex flex-col">
@@ -49,9 +50,16 @@ const ExperienceItemComponent = ({ job }: { job: ExperienceItem }) => {
             </div>
           </h3>
 
-          <p className="w-fit italic opacity-50 2xs:text-right">
-            {job.duration}
-          </p>
+          <div className="flex w-fit items-center 2xs:flex-col 2xs:items-start">
+            <p className="italic opacity-50 2xs:text-right">{job.duration}</p>
+
+            <ChevronDown
+              className={cn(
+                "ml-auto w-[2ch] p-0 opacity-50 transition-transform duration-500 ease-bouncy",
+                open ? "rotate-180" : "",
+              )}
+            />
+          </div>
         </button>
 
         <ul
