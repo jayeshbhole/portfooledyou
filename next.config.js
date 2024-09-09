@@ -6,6 +6,16 @@ await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
+  redirects: async () => {
+    return [
+      {
+        source: "/resume",
+        destination:
+          "https://drive.google.com/file/d/1-Z8MKR2qPEfyGDNoUxbmok8cRdVWvOfh/view?usp=drive_link",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
