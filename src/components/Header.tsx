@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ name }) => {
                 •
               </div>
             </div>
-            <span>Developer (Self && Web3)</span>
+            <span>Web3 Developer, Designer</span>
           </li>
           <li className="item-cell">
             <div className="h-4 w-[2.5ch] self-start pt-3 leading-[1]">
@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ name }) => {
                 className="group flex h-full w-full items-center"
                 target="_blank"
               >
-                <ArrowRight className="ease-bouncy mr-[1ch] inline-block h-4 w-4 transition-transform duration-300 group-hover:-rotate-45" />
+                <ArrowRight className="mr-[1ch] inline-block h-4 w-4 transition-transform duration-300 ease-bouncy group-hover:-rotate-45" />
                 <span>{link.name}</span>
               </Link>
             </li>

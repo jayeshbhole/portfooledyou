@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import Link from "next/link";
-import { ReactElement, ReactNode } from "react";
+import type { ReactElement } from "react";
 
 export interface ExperienceItem {
   company: string;
@@ -16,6 +16,7 @@ export interface ProjectItem {
   description: Array<ReactElement | string>;
   link: string;
   tech: string[];
+  images: string[];
 }
 
 interface AppData {
@@ -28,7 +29,7 @@ interface AppData {
 
 export const appData: AppData = {
   name: "Jayesh Bhole",
-  title: "Developer (Self && Web3)",
+  title: "Web3 Developer, Designer",
   // about: `I want to be part of the reason your users tweet about how good the app feels. Why? Cause it puts a stupidly wide smile on my face :)`,
   about: (
     <span key="1">
@@ -40,9 +41,32 @@ export const appData: AppData = {
   ),
   experience: [
     {
+      company: "ZeroDev Inc.",
+      position: "Full Stack Developer",
+      duration: "Feb 2025 - Current",
+      image: "zerodev.png",
+      description: [
+        <span key="1">
+          Designed and built{" "}
+          <Link href="https://7702.zerodev.app" target="_blank">
+            EIP-7702 Examples
+          </Link>{" "}
+          utilising the ZeroDev SDK and embedded wallet providers.
+        </span>,
+
+        <span key="1">
+          Built the{" "}
+          <Link href="https://dashboard.zerodev.app" target="_blank">
+            v2 Dashboard
+          </Link>{" "}
+          and related APIs with TypeScript, PostgreSQL, and React.
+        </span>,
+      ],
+    },
+    {
       company: "StakeEase",
       position: "Founding Engineer, Designer",
-      duration: "Jan 2024 - Current",
+      duration: "Jan 2024 - Feb 2025",
       image: "stakeease.png",
       description: [
         <span key="1">
@@ -60,7 +84,7 @@ export const appData: AppData = {
     {
       company: "Router Protocol",
       position: "Fullstack Developer",
-      duration: "May 2023 - Current",
+      duration: "May 2023 - Feb 2025",
       image: "router.png",
       description: [
         <span key="1">
@@ -150,7 +174,6 @@ export const appData: AppData = {
       description: [
         "Built at EthIndia Fellowship 3.0.",
         "ERC4337 Wallet with SMS onboarding and account usernames.",
-        "On-chain session keys for multi device login and spending limits for sessions.",
       ],
       link: "https://devfolio.co/projects/one-aa-human-wallet-3bbb",
       tech: [
@@ -161,6 +184,7 @@ export const appData: AppData = {
         "Firebase",
         "Web3Auth",
       ],
+      images: ["one-wallet-1.png", "one-wallet-2.png"],
     },
     {
       name: "Panda Wallet",
@@ -171,6 +195,7 @@ export const appData: AppData = {
       ],
       link: "https://devfolio.co/projects/panda-wallet-698f",
       tech: ["Solidity", "React", "ERC4337", "Covalent"],
+      images: ["panda-wallet-1.png", "panda-wallet-2.png"],
     },
     {
       name: "Samrajya DAO",
@@ -181,6 +206,7 @@ export const appData: AppData = {
       ],
       link: "https://devfolio.co/projects/samrajya-dao-4d97",
       tech: ["React", "Solidity", "Hardhat"],
+      images: ["samrajya-dao-1.png", "samrajya-dao-2.png"],
     },
     {
       name: "Stroller Protocol",
@@ -191,6 +217,7 @@ export const appData: AppData = {
       ],
       link: "https://ethglobal.com/showcase/stroller-protocol-3x6sy",
       tech: ["The Graph", "ChainLink", "React", "Chakra UI"],
+      images: ["stroller-1.png"],
     },
     {
       name: "Shatranj",
@@ -201,6 +228,7 @@ export const appData: AppData = {
       ],
       link: "https://devfolio.co/projects/shatranj-d063",
       tech: ["IPFS", "Solidity", "Moralis Cloud", "HTML Canvas"],
+      images: ["shatranj-1.png", "shatranj-2.png", "shatranj-3.png"],
     },
     {
       name: "Marsmello",
@@ -209,9 +237,16 @@ export const appData: AppData = {
         <>🏆 at ETHOdyssey.</>,
         "Truly decentralised game featuring NFTs, play-to-earn tokens and assets built and deployed on the Ethereum network.",
         "Built with React Spring, a browser based infinite 2D world game renderer.",
+        <span key="1">
+          Watch the demo{" "}
+          <Link href="https://youtu.be/i628A8aNCEk" target="_blank">
+            here
+          </Link>
+        </span>,
       ],
       link: "https://devfolio.co/projects/marsmello-a90e",
       tech: ["React Spring", "The Graph"],
+      images: ["marsmello-1.png", "marsmello-2.png", "marsmello-3.png"],
     },
   ],
 };
@@ -219,6 +254,10 @@ export const appData: AppData = {
 export const links = [
   { name: "Devfolio", href: "https://devfolio.co/@0xjayesh" },
   { name: "Github", href: "https://github.com/jayeshbhole" },
+  {
+    name: "Resume",
+    href: "https://drive.google.com/file/d/1-Z8MKR2qPEfyGDNoUxbmok8cRdVWvOfh/view?usp=drive_link",
+  },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/jayeshbhole/",
